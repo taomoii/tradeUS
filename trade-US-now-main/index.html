@@ -357,43 +357,44 @@
 
                 <!------------ 新增區域 ------------>
                 <div id="steps"></div>
-<section class="item steps">
-    <div class="steps-header-wrap">
-        <img src="images/starBg_3.png" alt="" class="steps-stock-tattoo steps-stock-tattoo-1">
-        <img src="images/starBg_3.png" alt="" class="steps-stock-tattoo steps-stock-tattoo-2">
-        <div class="container">
-            <h2 class="steps_tit-type1 text-blue toggleTit" title="限定擁有美股投資報告觀看資源，強化美股投資決策力" data-aos="fade-up">
-                <span @click="steps1 = !steps1">
-                    限定擁有美股投資報告觀看資源，強化美股投資決策力
-                </span>
+                <section class="item steps">
+                    <div class="steps-header-wrap">
+                        <img src="images/starBg_3.png" alt="" class="steps-stock-tattoo steps-stock-tattoo-1">
+                        <img src="images/starBg_3.png" alt="" class="steps-stock-tattoo steps-stock-tattoo-2">
+                        <div class="container">
+                            <h2 class="steps_tit-type1 text-blue toggleTit" title="限定擁有美股投資報告觀看資源，強化美股投資決策力" data-aos="fade-up">
+                                限定擁有美股投資報告觀看資源，<br>強化美股投資決策力
+                            </span>
+                
+                            <span class="seemore-btn" @click="steps1 = !steps1" :class="{'active': !steps1}">
+                                <span class="seemore-text" v-if="!steps1">點我看更多</span><span class="seemore-text" v-else>收合內容</span>
+                                <span class="material-symbols-outlined" v-if="!steps1">add</span>
+                                <span class="material-symbols-outlined" v-else>remove</span>
+                            </span>
+                        </h2>
+                    </div>
+                </div>
     
-                <span class="seemore-btn" @click="steps1 = !steps1" :class="{'active': !steps1}">
-                    <span class="seemore-text" v-if="!steps1">點我看更多</span>
-                    <span class="seemore-text" v-else>收合內容</span>
-                    <span class="material-symbols-outlined" v-if="!steps1">add</span>
-                    <span class="material-symbols-outlined" v-else>remove</span>
-                </span>
-            </h2>
-        </div>
-    </div>
-
-    <div class="container">
-        <div v-show="steps1">
-            <p class="steps_tit-type2 text-center aos-init aos-animate" data-aos="fade-up">凱基客戶限定擁有Fundstrat美股投資報告觀看，打開 APP即時掌握華爾街第一手投資觀點</p>
-            <h3 class="steps-item-tit" title="凱基客戶專屬">凱基客戶專屬</h3>
-            <p>限定擁有Fundstrat專屬美股投資報告觀看資源：</p>
-            <ul style="padding-bottom: 10px;">
-                <li>Fundstrat觀點：第一手的華爾街資訊，涵蓋美國政策、聯準會動向觀測及投資報告</li>
-                <li>投顧觀點：凱基投顧結合Fundstrat的雙重核心研究內容</li>
-                <li>超美股感SHOW：結合Fundstrat觀點的精彩美股節目，每月兩集、鎖定週一，就在凱基證券樂活投資人YT頻道→<a href="https://www.youtube.com/playlist?list=PLQMOucYPyMXZ7lXIwAOW1O5PFQAX_K1um" target="_blank">(立即觀看)</a></li>
-            </ul>
-
-            <h3 class="steps-item-tit" title="凱基客戶專屬">Fundstrat 美股投資頂流</h3>
-            <p>
-                Fundstrat成立於2014年，總部位於紐約，核心研究團隊來自J.P. Morgan、Morgan Stanley等國際投行，全球約25個國家服務超過220家機構客戶，擅長掌握短期市場節奏、投資人情緒與市場流動性，研究具高度時效性，與傳統券商偏重基本面的長期分析形成互補。其研究涵蓋華府政策、投資組合策略、量化與技術策略、數位資產及市場情報等領域，並頻繁於國際主流媒體曝光，具高度市場指標性。
-                <br>
-                Fundstrat創辦人Tom Lee有「華爾街神算子」之稱，現為華爾街曝光度最高的策略分析師之一，擁有逾25年機構研究經驗，曾任J.P. Morgan首席策略分析師，並連年獲Institutional Investor評為頂級分析師，其個人社群帳號追蹤者超過60萬人，為具備全球市場影響力之意見領袖。 
-            </p>
+                <div class="container">
+                    <div v-if="steps1">
+                        <p class="steps_tit-type2 text-center aos-init aos-animate" data-aos="fade-up">
+                            凱基客戶限定擁有Fundstrat美股投資報告觀看，打開 APP即時掌握華爾街第一手投資觀點
+                        </p>
+                        <h3 class="steps-item-tit" title="凱基客戶專屬">凱基客戶專屬</h3>
+                        <p>限定擁有Fundstrat專屬美股投資報告觀看資源：</p>
+                        
+                        <ul style="padding-bottom: 10px;">
+                            <li>Fundstrat觀點：第一手的華爾街資訊，涵蓋美國政策、聯準會動向觀測及投資報告</li>
+                            <li>投顧觀點：凱基投顧結合Fundstrat的雙重核心研究內容</li>
+                            <li>超美股感SHOW：結合Fundstrat觀點的精彩美股節目，每月兩集、鎖定週一，就在凱基證券樂活投資人YT頻道→<a href="https://www.youtube.com/playlist?list=PLQMOucYPyMXZ7lXIwAOW1O5PFQAX_K1um" target="_blank">(立即觀看)</a></li>
+                        </ul>
+            
+                        <h3 class="steps-item-tit" title="凱基客戶專屬">Fundstrat 美股投資頂流</h3>
+                        <p>
+                            Fundstrat成立於2014年，總部位於紐約，核心研究團隊來自J.P. Morgan、Morgan Stanley等國際投行，全球約25個國家服務超過220家機構客戶，擅長掌握短期市場節奏、投資人情緒與市場流動性，研究具高度時效性，與傳統券商偏重基本面的長期分析形成互補。其研究涵蓋華府政策、投資組合策略、量化與技術策略、數位資產及市場情報等領域，並頻繁於國際主流媒體曝光，具高度市場指標性。
+                            <br>
+                            Fundstrat創辦人Tom Lee有「華爾街神算子」之稱，現為華爾街曝光度最高的策略分析師之一，擁有逾25年機構研究經驗，曾任J.P. Morgan首席策略分析師，並連年獲Institutional Investor評為頂級分析師，其個人社群帳號追蹤者超過60萬人，為具備全球市場影響力之意見領袖。 
+                        </p>
 
             <h3 class="steps-item-tit2" title="如何觀看FundStrat美股報告？">如何觀看FundStrat美股報告？</h3>
             <div class="Steptab">
