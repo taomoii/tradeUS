@@ -834,18 +834,7 @@ const app = Vue.createApp({
             this.windowHeight = val;
         },
     },
-    steps1(newVal) {
-        if (newVal) {
-            this.$nextTick(() => {
-                let ref = this.tabIndex4 == 1 ? this.$refs.slickStep1 : this.$refs.slickStep2;
-                if (ref) {
-                    // 強制瀏覽器立刻完成 layout 計算(讀取 offsetHeight 會觸發同步 reflow)
-                    void ref.$el.offsetHeight;
-                    ref.reSlick();
-                }
-            });
-        }
-    },
+    
 });
 
 // ========= 燈箱 ==============================================================================================================================
