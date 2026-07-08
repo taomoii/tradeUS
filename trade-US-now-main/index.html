@@ -363,8 +363,13 @@
         <img src="images/starBg_3.png" alt="" class="steps-stock-tattoo steps-stock-tattoo-2">
         <div class="container">
             <h2 class="steps_tit-type1 text-blue toggleTit" title="限定擁有美股投資報告觀看資源，強化美股投資決策力" data-aos="fade-up">
-                <span @click="steps1 = !steps1" :class="{'active': !steps1}">
+                <span @click="steps1 = !steps1">
                     限定擁有美股投資報告觀看資源，強化美股投資決策力
+                </span>
+    
+                <span class="seemore-btn" @click="steps1 = !steps1" :class="{'active': !steps1}">
+                    <span class="seemore-text" v-if="!steps1">點我看更多</span>
+                    <span class="seemore-text" v-else>收合內容</span>
                     <span class="material-symbols-outlined" v-if="!steps1">add</span>
                     <span class="material-symbols-outlined" v-else>remove</span>
                 </span>
@@ -380,7 +385,7 @@
             <ul style="padding-bottom: 10px;">
                 <li>Fundstrat觀點：第一手的華爾街資訊，涵蓋美國政策、聯準會動向觀測及投資報告</li>
                 <li>投顧觀點：凱基投顧結合Fundstrat的雙重核心研究內容</li>
-                <li>超美股感SHOW：結合Fundstrat觀點的精彩美股節目，每月兩集、鎖定週一，就在凱基證券樂活投資人YT頻道→<a href="" target="_blank">(立即觀看)</a></li>
+                <li>超美股感SHOW：結合Fundstrat觀點的精彩美股節目，每月兩集、鎖定週一，就在凱基證券樂活投資人YT頻道→<a href="https://www.youtube.com/playlist?list=PLQMOucYPyMXZ7lXIwAOW1O5PFQAX_K1um" target="_blank">(立即觀看)</a></li>
             </ul>
 
             <h3 class="steps-item-tit" title="凱基客戶專屬">Fundstrat 美股投資頂流</h3>
