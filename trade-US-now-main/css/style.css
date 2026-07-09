@@ -2373,7 +2373,7 @@ screen and (-ms-high-contrast:active) {
 .seemore-btn {
     background: #024097;
     color: #fff;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 4px;
@@ -2382,7 +2382,7 @@ screen and (-ms-high-contrast:active) {
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
-    margin: 20px 0;
+    margin: 20px auto;
     width: 160px;
     height: 44px;
 }
@@ -2406,7 +2406,7 @@ screen and (-ms-high-contrast:active) {
 
 .seemore-btn .material-symbols-outlined {
     font-size: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .steps-stock-tattoo {
@@ -2487,10 +2487,6 @@ screen and (-ms-high-contrast:active) {
     -ms-flex-align: center;
     align-items: center;
 }
-.steps .tab-content {
-    border: 1px solid #fff;
-    border-radius: 20px;
-}
 .steps .tab-content .slick-list {
     position: relative;
     display: block;
@@ -2499,7 +2495,6 @@ screen and (-ms-high-contrast:active) {
     padding: 0;
     background-color: #eff6ff;
     border-radius: 15px;
-    border: solid 5px #04327b;
 }
 .steps .slick-slider {
     padding-bottom: 0;
@@ -2525,13 +2520,12 @@ screen and (-ms-high-contrast:active) {
 }
 .steps-img {
     box-sizing: border-box;
-    border-radius: 30px;
+    border-radius: 25px;
     width: 250px;
     border: 5px solid #3d3d3d;
     padding: 0;
 }
 .tab-content > div:first-child .steps-img {
-    height: 540px;
     object-fit: cover;
 }
 .steps-step span {
